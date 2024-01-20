@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, intial-scale=1.0">
+  <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+  <main>
+    <h1 class="starter" id="title">Sailing Interest Survey Form</h1>
+    <hr>
+    <p class="starter" id="description">Please let us know what interests you about sailing</p>
+    <div class="survey">
+      <form id="survey-form">
+        <fieldset>
+          <div class="intro">
+          <label for="name" id="name-label" class="block">Name: <input name="name" id="name" type="text" required placeholder="Christopher Columbus">
+</label>
+          <label class="block" for="age" id="number-label">Age: <input name="age" id="number" type="number" min="16" max="120" required placeholder="50">
+</label>
+          <label class="block" id="email-label" for="email">Email: <input name="email" type="email" id="email" placeholder="Looking@newworld.com" required>
+</label>
+</div>
+          <label for="dropdown">Describe your sailing experience: 
+<select id="dropdown" required>
+  <option value="">Select</option>
+  <option value="1">None other than watching "Titanic"</option>
+  <option value="2">Occasionally sailed with friends</option>
+  <option value="3">Regular sailor</option>
+  <option value="4">I'm basically 'Mr America's Cup'</option>
+</select>
+</label>
+        </fieldset>
+        <fieldset>
+          <p>Which kind of sailing experience are you looking for? </p>
+          <label class="block">
+<input type="radio" value="1" name= "experience">Sail
+</label>
+          <label class="block">
+<input type="radio" value="2" name= "experience">Power
+</label>
+          <label>
+<input type="radio" value="3" name= "experience">Electric
+</label>
+        </fieldset>
+        <fieldset>
+          <p>What areas of sailing are you interested in? Can select mulitple options</p>
+          <label class="block" for="interests"><input type="checkbox" value="1" >Making new friends
+</label>
+          <label for="interests" class="block"><input type="checkbox" value="2" >Learning new skils
+</label>
+          <label class="block" for="interests"><input type="checkbox" value="3">Networking
+</label>
+          <label class="block" for="interests"><input type="checkbox" value="4">Not sinking </label>
+          <label class="block" for="interests"><input type="checkbox" value="5">My therapist said I should
+</label>
+          <label class="block" for="interests"><input type="checkbox" value="6">Working on a remake of 'Titanic'
+</label>
+          <label class="block" for="interests"><input type="checkbox" value="7">The drinks afterwards
+</label>
+        </fieldset>
+        <fieldset>
+          <label class="movie-script" for="movie-script">Tell us more about your re-write of 'Titanic'<textarea id="movie-script" rows="5" cols="40" placeholder = "Perhaps a bigger floating door?..." required></textarea>
+            </label>
+        </fieldset>
+        <input type="submit" value="Submit" id="submit" class="submit-button">
+      </form>
+    </div>
+  </main>
+</body>
+
+</html>
